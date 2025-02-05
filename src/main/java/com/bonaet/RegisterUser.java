@@ -18,7 +18,6 @@ import jakarta.servlet.http.HttpServletResponse;
  */
 @WebServlet("/register-user")
 public class RegisterUser extends HttpServlet {
-	private static final long serialVersionUID = 1L;
 	
 	public void doPost(HttpServletRequest req , HttpServletResponse res) throws IOException {
 		
@@ -42,7 +41,7 @@ public class RegisterUser extends HttpServlet {
 			pststement.setString(2, lanme);
 			pststement.executeUpdate();
 				  
-			res.sendRedirect("index.jsp");
+			res.sendRedirect("users-list.jsp");
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

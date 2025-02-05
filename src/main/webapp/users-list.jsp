@@ -28,7 +28,7 @@ ResultSet rs = pstatement.executeQuery();
 out.println("<table><thead><tr><th>First Name</th><th>Last Name</th></tr></thead>");
 while(rs.next()){
 	String fname= rs.getString("fname");
-	String lname= rs.getString("fname");
+	String lname= rs.getString("lname");
 	out.println("<tr><td>"+fname+"</td><td>"+lname+"</td></tr>");	
 }
 out.println("</table>");
